@@ -1,0 +1,95 @@
+.petition__heading {
+  text-align: center;
+}
+
+.petition__image {
+  margin-inline: auto;
+  width: 100%;
+  max-width: 30rem;
+  display: block;
+  box-shadow: var(--shadow-5);
+}
+
+.petition__intro {
+  margin-inline: auto;
+  font-family: var(--font-mono);
+}
+
+.petition__list {
+  li {
+    list-style-position: inside;
+    padding: 0.5em;
+    &:nth-child(odd) {
+      background-color: var(--gray-2);
+    }
+  }
+}
+
+.petition__pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+  text-transform: uppercase;
+  font-family: var(--font-mono);
+  a {
+    text-decoration: none;
+  }
+}
+
+.petition-form {
+  background-color: var(--blue-3);
+  padding: var(--size-fluid-3);
+  box-shadow: var(--shadow-3);
+
+  [type='submit'] {
+    font-weight: bold;
+    padding: var(--size-fluid-1);
+
+    display: block;
+    border: 1px solid currentColor;
+    background: var(--green-4);
+    box-shadow: var(--shadow-3);
+
+    &:focus-visible,
+    &:hover {
+      background-color: var(--green-1);
+    }
+  }
+
+  .inputs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--size-fluid-3);
+    margin-block-end: var(--size-fluid-3);
+  }
+
+  .inputWrapper {
+    flex: 1;
+    label {
+      font-weight: bold;
+      display: block;
+    }
+    input {
+      width: 100%;
+      min-width: 20ch;
+    }
+  }
+
+  .message {
+    display: block;
+    &:not(:empty) {
+      margin-block-start: var(--size-fluid-3);
+    }
+  }
+}
+
+.signature {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 1em;
+  padding: 0.5em;
+  &:nth-child(odd) {
+    background-color: var(--gray-2);
+  }
+}

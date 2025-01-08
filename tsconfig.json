@@ -13,12 +13,15 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    "verbatimModuleSyntax": true,
     "plugins": [
       {
         "name": "next"
       }
     ],
     "paths": {
+      "@/hooks/*": ["./lib/hooks/*"],
+      "@/img/*": ["./public/img/*"],
       "@/*": ["./*"]
     }
   },
